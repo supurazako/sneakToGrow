@@ -1,0 +1,4 @@
+name: sneakToGrow
+version: '${project.version}'
+main: io.github.supurazako.sneaktogrow.SneakToGrow
+api-version: 1.19
