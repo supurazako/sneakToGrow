@@ -3,6 +3,8 @@ package io.github.supurazako.sneaktogrow;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockState;
+import org.bukkit.material.Crops;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
@@ -35,11 +37,18 @@ public final class SneakToGrow extends JavaPlugin implements Listener {
             Location center = player.getLocation();
 
 
+
+
+
             // 範囲内のブロックを取得する
             for (double x = center.getX() -2.5; x <= center.getX() +2.5; x++) {
-                for (int yOffset = -1; yOffset <= 1; yOffset++) {
-                    for (int zOffset = -2; zOffset <= 2; zOffset++) {
-                        Block block = location.getWorld().getBlockAt(x + xOffset, y + yOffset, z + zOffset);
+                for (double y = center.getY() -2.5; y <= center.getY() +2.5; y++) {
+                    for (double z = center.getZ() -2.5; z <= center.getZ() +2.5; z++) {
+                        Location location = new Location(world, x, y, z);
+                        Block block = location.getBlock();
+                        // ブロックに対する処理
+
+                        }
                     }
                 }
             }
