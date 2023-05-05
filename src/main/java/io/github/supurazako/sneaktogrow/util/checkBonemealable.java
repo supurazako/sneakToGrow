@@ -8,11 +8,14 @@ public class checkBonemealable {
 
 
     private static final Set<Material> SNEAK_GROW_PLANTS = Set.of(
+            // 作物
             Material.WHEAT,
-            Material.CARROT,
+            Material.CARROTS,
             Material.POTATOES,
             Material.BEETROOTS,
-
+            Material.PUMPKIN_STEM,
+            Material.MELON_STEM,
+            // 苗木
             Material.OAK_SAPLING,
             Material.SPRUCE_SAPLING,
             Material.BIRCH_SAPLING,
@@ -20,10 +23,31 @@ public class checkBonemealable {
             Material.ACACIA_SAPLING,
             Material.DARK_OAK_SAPLING,
             Material.AZALEA,
+            Material.FLOWERING_AZALEA,
+            Material.MANGROVE_PROPAGULE,
+            // 花
+            Material.SUNFLOWER,
+            Material.LILAC,
+            Material.ROSE_BUSH,
+            Material.PEONY,
+            // その他
+            Material.SEAGRASS,
+
+            Material.RED_MUSHROOM,
+            Material.BROWN_MUSHROOM,
+
+            Material.COCOA,
+
+            Material.SEA_PICKLE,
+            Material.CRIMSON_FUNGUS,
+            Material.WARPED_FUNGUS,
+
+            Material.WEEPING_VINES,
+            Material.TWISTING_VINES,
+            Material.CAVE_VINES,
+
             
             Material.BAMBOO,
-            Material.MELON_STEM,
-            Material.PUMPKIN_STEM,
             Material.SWEET_BERRY_BUSH,
             Material.KELP
     );
