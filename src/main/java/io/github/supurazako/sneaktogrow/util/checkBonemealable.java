@@ -1,11 +1,6 @@
 package io.github.supurazako.sneaktogrow.util;
 
-import org.bukkit.CropState;
 import org.bukkit.Material;
-import org.bukkit.block.BlockState;
-import org.bukkit.material.Crops;
-import org.bukkit.block.Block;
-
 import java.util.Set;
 
 
@@ -33,7 +28,8 @@ public class checkBonemealable {
             Material.KELP
     );
 
-    public boolean isBonemealable(Material material) {
+
+    public static boolean isBonemealable(Material material) {
         return material.isBlock() && SNEAK_GROW_PLANTS.contains(material);
     }
 }
