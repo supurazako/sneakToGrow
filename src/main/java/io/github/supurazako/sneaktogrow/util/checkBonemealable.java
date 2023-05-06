@@ -43,13 +43,18 @@ public class checkBonemealable {
             Material.WARPED_FUNGUS,
 
             Material.WEEPING_VINES,
+            Material.WEEPING_VINES_PLANT,
             Material.TWISTING_VINES,
+            Material.TWISTING_VINES_PLANT,
             Material.CAVE_VINES,
+            Material.CAVE_VINES_PLANT,
 
             
             Material.BAMBOO,
+            Material.BAMBOO_SAPLING,
             Material.SWEET_BERRY_BUSH,
-            Material.KELP
+            Material.KELP,
+            Material.KELP_PLANT
     );
 
 
