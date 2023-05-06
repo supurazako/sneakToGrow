@@ -1,7 +1,6 @@
 package io.github.supurazako.sneaktogrow;
 
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -57,9 +56,8 @@ public final class SneakToGrow extends JavaPlugin implements Listener {
                     for (double z = center.getZ() -2; z <= center.getZ() +2; z++) {
                         Location location = new Location(world, x, y, z);
                         Block block = location.getBlock();
-                        Material mat = block.getType();
                         // ブロックに対する処理
-                        if(checkBonemealable.isBonemealable(mat)) {
+                        if(checkBonemealable.isBonemealable(block) ) {
                             // 骨粉が使用できるブロックの場合、リストに追加
                             boneMealBlocks.add(block);
                             //block.applyBoneMeal(BlockFace.EAST);

@@ -1,6 +1,9 @@
 package io.github.supurazako.sneaktogrow.util;
 
 import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.block.data.Ageable;
+
 import java.util.Set;
 
 
@@ -58,7 +61,22 @@ public class checkBonemealable {
     );
 
 
-    public static boolean isBonemealable(Material material) {
+    public static boolean isBonemealable(Block block) {
+        Material material = block.getType();
+        if(isFullyGrown(block)) {
+            return false;
+        }
         return material.isBlock() && SNEAK_GROW_PLANTS.contains(material);
+    }
+
+
+    public static boolean isFullyGrown(Block block) {
+        if(block.getBlockData() instanceof Ageable) {
+            Ageable ageable = (Ageable) block.getBlockData();
+            return ageable.getAge() == ageable.getMaximumAge();
+        }
+        else {
+            return false;
+        }
     }
 }
